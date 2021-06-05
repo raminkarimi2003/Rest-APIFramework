@@ -1,0 +1,276 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-01T18:21:02.657Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8950418300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hooks.before_Scenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verifying Add Place API is successfully excecuted",
+        "description": "",
+        "id": "add-api-place-using-google-map;verifying-add-place-api-is-successfully-excecuted;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place was embeded in the body as payload with \"Ramin Karimi\" \"Kanata, Canada\" \"Persian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ramin Karimi\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Kanata, Canada\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"Persian\"",
+                  "offset": 82
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.add_place_was_embeded_in_the_body_as_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1158725700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"AddPlaceAPI\" request was sent as \"POST\"  http prorocal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.request_was_sent_as_http_prorocal(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status code was successfully asserted at 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.status_code_was_successfully_asserted_at(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11991200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" response in body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.response_in_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12992600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" response in body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.response_in_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2742475800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify place_id maps to \"Ramin Karimi\" using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ramin Karimi\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.verify_place_id_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-01T18:21:15.655Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.Hooks.before_Scenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verifying Delete Place API is successfully excecuted",
+        "description": "",
+        "id": "add-api-place-using-google-map;verifying-delete-place-api-is-successfully-excecuted",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Delete Place API in the payload",
+            "match": {
+              "location": "StepDefinition.stepDefinition.delete_place_api_in_the_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3083425900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"DeletePlaceAPI\" is passed as \"GET\" http protocal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.is_passed_as_http_protocal(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "status code was successfully asserted as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.status_code_was_successfully_asserted_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8995000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"status\" response in the body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.stepDefinition.response_in_the_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Add APi place using google map",
+    "description": "",
+    "id": "add-api-place-using-google-map",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/placeValidation.feature",
+    "tags": []
+  }
+]
